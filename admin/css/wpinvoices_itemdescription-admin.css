@@ -1,0 +1,47 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.dp_description-wrap >label{
+ 	font-size: 15px;
+ 	font-weight: 500;
+	position: relative;
+	width: 100%;
+	display: inline-block;
+}
+.dp_description-wrap >label::after 
+{
+    content: "\f140";
+    position: absolute;
+    right: 0;
+    font: normal 20px/1 dashicons;
+}
+.dp_description-wrap.active >label::after 
+{
+	content: "\f142";
+}
+.dp_description-wrap .wp-core-ui.wp-editor-wrap{
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+.dp_description-wrap .wp-core-ui.wp-editor-wrap {
+    display: none;
+}
+.dp_description-wrap.active .wp-core-ui.wp-editor-wrap {
+    display: block;
+}
+
+.dp_price-wrap > label{
+	font-size: 15px;
+	font-weight: 500;
+	padding-right: 10px;
+	position: relative;
+}
+.dp_price-wrap > input{
+	border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0 8px;
+    height: 28px;
+    line-height: 28px;
+}
